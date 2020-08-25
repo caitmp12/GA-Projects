@@ -26,3 +26,14 @@ When all Avengers are "assembled", Loki says to the player, "well, it's been fun
 
 Avengers then say, "Thank you for your help. And don't worry, Loki will not get far." 
 
+
+
+API Character IDs
+
+Iron Man: 346
+Thor: 659
+Hulk: 332
+Captain America:149
+Black Widow: 107
+Hawkeye: 313 
+

@@ -1,0 +1,37 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    /* background-image: url("https://terrigen-cdn-dev.marvel.com/content/prod/1x/a33.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.header {
+    border: 3px;
+    border-color: gold;
+}
+
+.loki {
+    border: 3px;
+    border-color: gold;    
+
+}
+
+.assembled{
+    border: 3px;
+    border-color: gold;
+}
+
+.avengers {
+    border: 3px;
+    border-color: gold;
+}
+
+.graphics {
+    border: 3px;
+    border-color: gold;
+}
+
+#cards {
+    border: 3px;
+    border-color: gold;
+}
