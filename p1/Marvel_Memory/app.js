@@ -1,24 +1,17 @@
-$(() => { 
-
-
-
-
-
-$("button").on("click", () => {
-
-    console.log("button was clicked")
-
-})    
 
 $.ajax({
-    url:'https://www.superheroapi.com/api.php/10218014924347774/346',
-    success: (data)=>{
+    url:'https://www.superheroapi.com/api.php/10218014924347774/346'
+}).then(
+    (data)=> {
         console.log(data)
-    },
-    error: ()=>{
-        console.log("bad request")
+        console.log(data.biograhy)
+        $("#iron-name").html(data.name)
+        $("#full-name").html(data.biography.fullname)
+    }, 
+    ()=>{
+        console.log("bad")
     }
-})
+)
 
 
 
@@ -26,31 +19,25 @@ $.ajax({
 
 ////Game Logic
 
-$("#loki-pic").on("mouseover", () => {
-    alert("loki is talking")
-})
+// $("#loki-pic").on("mouseover", () => {
+//     alert("loki is talking")
+// })
 
-const split = () => {
+// const split = () => {
 
-}
+// }
 
-const turnover = () => {
+// const turnover = () => {
 
-}
+// }
 
-const combine = () => {
+// const combine = () => {
 
-}
+// }
 
-const assemble = () => {
+// const assemble = () => {
 
-}
-
-
-
-
-
-})
+// }
 
 
 
@@ -71,3 +58,20 @@ const assemble = () => {
 //once card becomes one again, the Avenger moves off the playing field to await the rest of the team. 
 
 //Once "assembled" area contains six cards, you've won the game. 
+
+
+
+
+
+//////////////////////////Cut Code/////////////////////////////////
+
+// $.ajax({
+//     url: 'https://www.superheroapi.com/api.php/10218014924347774/346',
+//     success: (data) => {
+//         console.log(data)
+
+//     },
+//     error: () => {
+//         console.log("bad request")
+//     }
+// })
