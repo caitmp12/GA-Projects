@@ -1,4 +1,8 @@
 
+$("#loki-pic").on("click", () => {
+    alert("loki is talking")
+})
+
 
 
 // const characterNums = [346, 659, 332, 149, 107, 313]
@@ -35,6 +39,8 @@ $.ajax({
 
 // const cardsFlipped = 0;
 
+const idArr = ["#iron-man", "#thor", "#hulk", "#cap", "#black-widow", "#hawkeye"]
+
 
 ////Game Logic
 
@@ -42,3 +48,12 @@ $("#loki-pic").on("click", () => {
     prompt
     // $(".grid-container").empty()
 })
+
+const cloneCards = () => {
+    for (let i = 0; i < idArr.length; i++){
+        $(`${idArr[i]}`).clone().appendTo(".grid-container")
+    }
+}
+
+cloneCards()
+
